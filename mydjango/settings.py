@@ -27,6 +27,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     'localhost',
+    'sample-python-django.scalingo.io',
     'sample-python-django.osc-fr1.scalingo.io',
 ]
 
