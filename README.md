@@ -1,5 +1,7 @@
 # Sample Application with Python and Django
 
+This sample is running on: https://python-django.is-easy-on-scalingo.com/
+
 ## Run locally with Docker
 
 First, you need to have `Docker` and `docker-compose` installed.
