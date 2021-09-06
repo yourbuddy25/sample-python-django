@@ -25,13 +25,10 @@ SECRET_KEY = 'meslodr4#==1^b=-h1%pfpn#6k7)g755&xkr4^h3013^_9j^_y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [
-    'localhost',
-    'sample-python-django.scalingo.io',
-    'sample-python-django.osc-fr1.scalingo.io',
-    'python-django.is-easy-on-scalingo.com',
-]
-
+# SECURITY WARNING: don't run it with '*' in production environment.
+# Please set allowed urls accordingly to the Django documentation:
+# https://docs.djangoproject.com/en/3.2/ref/settings/#allowed-hosts
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -123,4 +120,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
