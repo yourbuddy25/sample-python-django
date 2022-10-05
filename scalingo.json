@@ -4,6 +4,11 @@
   "logo": "https://scalingo.com/logo.svg",
   "repository": "https://github.com/Scalingo/sample-python-django",
   "website": "https://scalingo.com",
+  "addons": [
+    {
+      "plan": "postgresql:postgresql-sandbox"
+    }
+  ],
   "formation": {
     "web": {
       "amount": 1,
